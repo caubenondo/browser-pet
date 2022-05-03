@@ -16,7 +16,7 @@ let count = 0;
 
 // main render div
 const mainDisplay = document.querySelector('.display');
-const gameMusic = new Audio('/assets/sound/game.mp3');
+const gameMusic = new Audio('./assets/sound/game.wav');
 const clickSound = new Audio('./assets/sound/pickupCoin.wav');
 const gameOver = new Audio('./assets/sound/gameOver.wav');
 const musicPlay = document.querySelector('.musicPlay');
