@@ -21,7 +21,7 @@ const clickSound = new Audio('./assets/sound/pickupCoin.wav');
 const gameOver = new Audio('./assets/sound/gameOver.wav');
 const musicPlay = document.querySelector('.musicPlay');
 musicPlay.addEventListener('click',loopMusic);
-function loopMusic (){
+function loopMusic(){
     gameMusic.volume = 0.1;
     gameMusic.play();
     gameMusic.loop = true;
@@ -503,6 +503,7 @@ document.querySelector('#attention').addEventListener('click', function () {
    
     clickSound.play();
     idleDisplay();
+    loopMusic();
     
     
 })
