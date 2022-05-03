@@ -16,7 +16,7 @@ let count = 0;
 
 // main render div
 const mainDisplay = document.querySelector('.display');
-const gameMusic = new Audio('./assets/sound/game.wav');
+const gameMusic = new Audio('./assets/sound/game.mp3');
 const clickSound = new Audio('./assets/sound/pickupCoin.wav');
 const gameOver = new Audio('./assets/sound/gameOver.wav');
 const musicPlay = document.querySelector('.musicPlay');
@@ -197,7 +197,7 @@ function actionCheck() {
 function petDie() {
     gameOver.play();
     const allInputs = document.querySelectorAll('.uiBtn');
-    console.log(allInputs);
+    // console.log(allInputs);
     allInputs.forEach((input, i) => {
         input.setAttribute('disabled',true);
     });
